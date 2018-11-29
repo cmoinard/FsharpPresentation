@@ -14,7 +14,11 @@
 
 <br />
 <br />
-Christophe Moinard - [@chr_moinard](http://www.twitter.com/chr_moinard)
+Christophe Moinard 
+
+<br />
+
+[@chr_moinard](http://www.twitter.com/chr_moinard) - [github.com/cmoinard](https://github.com/cmoinard/FsharpPresentation)
 
 ***
 

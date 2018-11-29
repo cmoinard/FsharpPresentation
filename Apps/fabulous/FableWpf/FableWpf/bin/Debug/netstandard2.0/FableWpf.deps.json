@@ -1,0 +1,243 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "63eedc00d87daf87b9e6a8325d81d18810e8b827"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "FableWpf/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Fabulous.CustomControls": "0.27.0",
+          "Fabulous.LiveUpdate": "0.27.0",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Essentials": "0.6.0-preview",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "runtime": {
+          "FableWpf.dll": {}
+        }
+      },
+      "Fabulous.Core/0.27.0": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.CustomControls": "0.27.0",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.Core.dll": {
+            "assemblyVersion": "0.27.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Fabulous.CustomControls/0.27.0": {
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.CustomControls.dll": {
+            "assemblyVersion": "0.27.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Fabulous.LiveUpdate/0.27.0": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.LiveUpdate.dll": {
+            "assemblyVersion": "0.27.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "FSharp.Core/4.5.2": {
+        "runtime": {
+          "lib/netstandard1.6/FSharp.Core.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "2018.7.27.2"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/3.1.0.697729": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FableWpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fabulous.Core/0.27.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VqM+egs7jPMePT3k+6LSeht6y1/KUZ/sJPZ6SiMWfqs8ePeYNkl3anQrq+wLoiREUSGskn1Ai4hitylRiiW58A==",
+      "path": "fabulous.core/0.27.0",
+      "hashPath": "fabulous.core.0.27.0.nupkg.sha512"
+    },
+    "Fabulous.CustomControls/0.27.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZGYtXzWgfjpJhv9MNld4MVndSdiaAK9Xj/R5o1mfllOyckI6HR2RFjrGftaLocwQGSBGBTsoTrvoLrcmSzYGKA==",
+      "path": "fabulous.customcontrols/0.27.0",
+      "hashPath": "fabulous.customcontrols.0.27.0.nupkg.sha512"
+    },
+    "Fabulous.LiveUpdate/0.27.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CJTJu1gZBEKyixbXBuH4moeEyB68CK9RycsMT/ty4zrrZ1WKkJ3eBvpo6uj8XdcFPwQecOuqX8UTdSAcTHczyw==",
+      "path": "fabulous.liveupdate/0.27.0",
+      "hashPath": "fabulous.liveupdate.0.27.0.nupkg.sha512"
+    },
+    "FSharp.Core/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mQlCpyv/wNZAihLBUbBu8gS4NpXpBCTw/eMQqujn8sGBukxSYH3CoE0vPABACNQEv7HoAX7CJt5q7l6Yb2E2hg==",
+      "path": "fsharp.core/4.5.2",
+      "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HEiC4q9DFCJaoqxToN/SsiKNh1IC//EF7pUo9J9Ldd6MYV5bbE9d1TKOvN1mOOQnLZy7iCkt+SPlL51zHM4aUg==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FvWlniGVDaxkbNWnvj3f/R7OgJBr7jQzZWrr/gfrhdwNuNQHLWhmmTan+8VgmWZTGYTCGQWu6HmL7x8KWMD7fA==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/0.6.0-preview": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a3XF6wtLLUNJCUDemh6Ecfq3+JCsuv3e46Le9B3k69ix/lSsQuQIIAVvtp8u9bXNBk7IiROZpzA089H2mFTyNw==",
+      "path": "xamarin.essentials/0.6.0-preview",
+      "hashPath": "xamarin.essentials.0.6.0-preview.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.1.0.697729": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
+      "path": "xamarin.forms/3.1.0.697729",
+      "hashPath": "xamarin.forms.3.1.0.697729.nupkg.sha512"
+    }
+  }
+}

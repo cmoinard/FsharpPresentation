@@ -1,0 +1,5 @@
+source https://www.nuget.org/api/v2
+nuget FSharp.Charting
+nuget FSharp.Data
+nuget FSharp.Text.RegexProvider
+nuget FSharp.Data.SqlProvider

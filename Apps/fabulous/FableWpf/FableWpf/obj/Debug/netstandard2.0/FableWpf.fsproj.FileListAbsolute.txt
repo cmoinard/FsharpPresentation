@@ -1,0 +1,7 @@
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\bin\Debug\netstandard2.0\FableWpf.deps.json
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\bin\Debug\netstandard2.0\FableWpf.dll
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\bin\Debug\netstandard2.0\FableWpf.pdb
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\obj\Debug\netstandard2.0\FableWpf.fsprojAssemblyReference.cache
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\obj\Debug\netstandard2.0\FableWpf.dll
+C:\Users\Chris\Documents\Programmation\Presentation\Fs\Apps\fabulous\FableWpf\FableWpf\obj\Debug\netstandard2.0\FableWpf.pdb

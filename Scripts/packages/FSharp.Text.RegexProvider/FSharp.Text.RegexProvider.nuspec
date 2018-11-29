@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>FSharp.Text.RegexProvider</id>
+    <version>1.0.0</version>
+    <authors>Steffen Forkmann, David Tchepak, Sergey Tihon, Daniel Mohl, Tomas Petricek, Ryan Riley, Mauricio Scheffer, Phil Trelford, Vasily Kirichenko</authors>
+    <owners>Steffen Forkmann, David Tchepak, Sergey Tihon, Daniel Mohl, Tomas Petricek, Ryan Riley, Mauricio Scheffer, Phil Trelford, Vasily Kirichenko</owners>
+    <licenseUrl>http://github.com/fsprojects/FSharp.Text.RegexProvider/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://fsprojects.github.com/FSharp.Text.RegexProvider</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A type provider for regular expressions.</description>
+    <summary>A type provider for regular expressions.</summary>
+    <releaseNotes>Added a `Typed` prefix to generated methods - https://github.com/fsprojects/FSharp.Text.RegexProvider/issues/16</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>F# fsharp typeproviders regex</tags>
+  </metadata>
+</package>

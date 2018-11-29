@@ -1,0 +1,904 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "Fabulous.Core/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.CustomControls": "0.27.0",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.Core.dll": {}
+        }
+      },
+      "Fabulous.CustomControls/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.CustomControls.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.CustomControls.dll": {}
+        }
+      },
+      "Fabulous.LiveUpdate/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.LiveUpdate.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.LiveUpdate.dll": {}
+        }
+      },
+      "FSharp.Core/4.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OpenTK/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/OpenTK.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.dll": {}
+        }
+      },
+      "OpenTK.GLControl/1.1.2349.61993": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "1.1.2349.61993"
+        },
+        "compile": {
+          "lib/NET40/OpenTK.GLControl.dll": {}
+        },
+        "runtime": {
+          "lib/NET40/OpenTK.GLControl.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "WpfLightToolkit/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WpfLightToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WpfLightToolkit.dll": {}
+        }
+      },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.1.0.697729": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Platform.WPF/3.1.0.697729": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "2.0.0",
+          "OpenTK.GLControl": "1.1.2349.61993",
+          "WpfLightToolkit": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/Xamarin.Forms.Platform.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Xamarin.Forms.Platform.WPF.dll": {}
+        }
+      },
+      "FableWpf/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Fabulous.CustomControls": "0.27.0",
+          "Fabulous.LiveUpdate": "0.27.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Essentials": "0.6.0-preview",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "bin/placeholder/FableWpf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FableWpf.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win7-x86": {
+      "Fabulous.Core/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.CustomControls": "0.27.0",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.Core.dll": {}
+        }
+      },
+      "Fabulous.CustomControls/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.CustomControls.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.CustomControls.dll": {}
+        }
+      },
+      "Fabulous.LiveUpdate/0.27.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fabulous.LiveUpdate.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabulous.LiveUpdate.dll": {}
+        }
+      },
+      "FSharp.Core/4.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OpenTK/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/OpenTK.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.dll": {}
+        }
+      },
+      "OpenTK.GLControl/1.1.2349.61993": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "1.1.2349.61993"
+        },
+        "compile": {
+          "lib/NET40/OpenTK.GLControl.dll": {}
+        },
+        "runtime": {
+          "lib/NET40/OpenTK.GLControl.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "WpfLightToolkit/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WpfLightToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WpfLightToolkit.dll": {}
+        }
+      },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.1.0.697729": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Xamarin.Forms.props": {},
+          "build/netstandard2.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Platform.WPF/3.1.0.697729": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "2.0.0",
+          "OpenTK.GLControl": "1.1.2349.61993",
+          "WpfLightToolkit": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/Xamarin.Forms.Platform.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Xamarin.Forms.Platform.WPF.dll": {}
+        }
+      },
+      "FableWpf/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fabulous.Core": "0.27.0",
+          "Fabulous.CustomControls": "0.27.0",
+          "Fabulous.LiveUpdate": "0.27.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Essentials": "0.6.0-preview",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "bin/placeholder/FableWpf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FableWpf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fabulous.Core/0.27.0": {
+      "sha512": "VqM+egs7jPMePT3k+6LSeht6y1/KUZ/sJPZ6SiMWfqs8ePeYNkl3anQrq+wLoiREUSGskn1Ai4hitylRiiW58A==",
+      "type": "package",
+      "path": "fabulous.core/0.27.0",
+      "files": [
+        ".signature.p7s",
+        "fabulous.core.0.27.0.nupkg.sha512",
+        "fabulous.core.nuspec",
+        "lib/netstandard2.0/Fabulous.Core.dll",
+        "lib/netstandard2.0/Fabulous.Core.pdb"
+      ]
+    },
+    "Fabulous.CustomControls/0.27.0": {
+      "sha512": "ZGYtXzWgfjpJhv9MNld4MVndSdiaAK9Xj/R5o1mfllOyckI6HR2RFjrGftaLocwQGSBGBTsoTrvoLrcmSzYGKA==",
+      "type": "package",
+      "path": "fabulous.customcontrols/0.27.0",
+      "files": [
+        ".signature.p7s",
+        "fabulous.customcontrols.0.27.0.nupkg.sha512",
+        "fabulous.customcontrols.nuspec",
+        "lib/netstandard2.0/Fabulous.CustomControls.dll",
+        "lib/netstandard2.0/Fabulous.CustomControls.pdb"
+      ]
+    },
+    "Fabulous.LiveUpdate/0.27.0": {
+      "sha512": "CJTJu1gZBEKyixbXBuH4moeEyB68CK9RycsMT/ty4zrrZ1WKkJ3eBvpo6uj8XdcFPwQecOuqX8UTdSAcTHczyw==",
+      "type": "package",
+      "path": "fabulous.liveupdate/0.27.0",
+      "files": [
+        ".signature.p7s",
+        "fabulous.liveupdate.0.27.0.nupkg.sha512",
+        "fabulous.liveupdate.nuspec",
+        "lib/netstandard2.0/Fabulous.LiveUpdate.dll",
+        "lib/netstandard2.0/Fabulous.LiveUpdate.pdb",
+        "tools/Dotnet.ProjInfo.Helpers.dll",
+        "tools/Dotnet.ProjInfo.dll",
+        "tools/FSharp.Compiler.Service.dll",
+        "tools/FSharp.Core.dll",
+        "tools/FSharp.Core.resources.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/System.ValueTuple.dll",
+        "tools/fscd.exe",
+        "tools/fscd.exe.config",
+        "tools/fscd.pdb"
+      ]
+    },
+    "FSharp.Core/4.5.2": {
+      "sha512": "mQlCpyv/wNZAihLBUbBu8gS4NpXpBCTw/eMQqujn8sGBukxSYH3CoE0vPABACNQEv7HoAX7CJt5q7l6Yb2E2hg==",
+      "type": "package",
+      "path": "fsharp.core/4.5.2",
+      "files": [
+        ".signature.p7s",
+        "fsharp.core.4.5.2.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/net45/FSharp.Core.dll",
+        "lib/net45/FSharp.Core.optdata",
+        "lib/net45/FSharp.Core.resources.dll",
+        "lib/net45/FSharp.Core.sigdata",
+        "lib/net45/FSharp.Core.xml",
+        "lib/net45/cs/FSharp.Core.resources.dll",
+        "lib/net45/de/FSharp.Core.resources.dll",
+        "lib/net45/en/FSharp.Core.resources.dll",
+        "lib/net45/es/FSharp.Core.resources.dll",
+        "lib/net45/fr/FSharp.Core.resources.dll",
+        "lib/net45/it/FSharp.Core.resources.dll",
+        "lib/net45/ja/FSharp.Core.resources.dll",
+        "lib/net45/ko/FSharp.Core.resources.dll",
+        "lib/net45/pl/FSharp.Core.resources.dll",
+        "lib/net45/pt-BR/FSharp.Core.resources.dll",
+        "lib/net45/ru/FSharp.Core.resources.dll",
+        "lib/net45/tr/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/FSharp.Core.dll",
+        "lib/netstandard1.6/FSharp.Core.optdata",
+        "lib/netstandard1.6/FSharp.Core.sigdata",
+        "lib/netstandard1.6/FSharp.Core.xml",
+        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "FvWlniGVDaxkbNWnvj3f/R7OgJBr7jQzZWrr/gfrhdwNuNQHLWhmmTan+8VgmWZTGYTCGQWu6HmL7x8KWMD7fA==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "paket-installmodel.cache"
+      ]
+    },
+    "OpenTK/2.0.0": {
+      "sha512": "DkmlhzGkck55tjdGfWq5WFyKZy4mRev3k/BZDQigt0jCV8Lj3w5NP5ICSk1YHPnvcX/juwwxqlyfy76PZwUL0Q==",
+      "type": "package",
+      "path": "opentk/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "content/OpenTK.dll.config",
+        "lib/net20/OpenTK.dll",
+        "lib/net20/OpenTK.xml",
+        "opentk.2.0.0.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenTK.GLControl/1.1.2349.61993": {
+      "sha512": "RDxZ+kpn3oGYQPaR45naQYon8Rc9gqarkKrHX42m3tn00JdKnDHC+3F1FO10+SCjlDIvdA/m7ea3zW2CzsS6/A==",
+      "type": "package",
+      "path": "opentk.glcontrol/1.1.2349.61993",
+      "files": [
+        ".signature.p7s",
+        "lib/NET40/OpenTK.GLControl.dll",
+        "lib/NET40/OpenTK.GLControl.xml",
+        "opentk.glcontrol.1.1.2349.61993.nupkg.sha512",
+        "opentk.glcontrol.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "WpfLightToolkit/1.0.1": {
+      "sha512": "J/oHsQh33FvHNY7gHYXxknJiRYc0HOYpip2iQVxkhxuW0T5ZvHx2gZB6Rfq5GSRucfWSQu3ty4DT7olJ069cAw==",
+      "type": "package",
+      "path": "wpflighttoolkit/1.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/WpfLightToolkit.dll",
+        "wpflighttoolkit.1.0.1.nupkg.sha512",
+        "wpflighttoolkit.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/0.6.0-preview": {
+      "sha512": "a3XF6wtLLUNJCUDemh6Ecfq3+JCsuv3e46Le9B3k69ix/lSsQuQIIAVvtp8u9bXNBk7IiROZpzA089H2mFTyNw==",
+      "type": "package",
+      "path": "xamarin.essentials/0.6.0-preview",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid71/Xamarin.Essentials.dll",
+        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "xamarin.essentials.0.6.0-preview.nupkg.sha512",
+        "xamarin.essentials.nuspec"
+      ]
+    },
+    "Xamarin.Forms/3.1.0.697729": {
+      "sha512": "oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
+      "type": "package",
+      "path": "xamarin.forms/3.1.0.697729",
+      "files": [
+        ".signature.p7s",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/System.CodeDom.dll",
+        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard1.0/Xamarin.Forms.Core.dll",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard1.0/Xamarin.Forms.DefaultItems.targets",
+        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard1.0/Xamarin.Forms.props",
+        "build/netstandard1.0/Xamarin.Forms.targets",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.props",
+        "build/netstandard2.0/Xamarin.Forms.DefaultItems.targets",
+        "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard2.0/Xamarin.Forms.props",
+        "build/netstandard2.0/Xamarin.Forms.targets",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/tizen40/Xamarin.Forms.Core.dll",
+        "lib/tizen40/Xamarin.Forms.Core.pdb",
+        "lib/tizen40/Xamarin.Forms.Core.xml",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.pdb",
+        "lib/tizen40/Xamarin.Forms.Platform.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.pdb",
+        "lib/tizen40/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.3.1.0.697729.nupkg.sha512",
+        "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Platform.WPF/3.1.0.697729": {
+      "sha512": "DGTWFkRpaO6BOrPjXliMjrN15X84S1T0hv2wUluiwvX8KP5qg2nYtlLHKA9kSLndq3zL8NJR3IR0VOsE3cct9A==",
+      "type": "package",
+      "path": "xamarin.forms.platform.wpf/3.1.0.697729",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Xamarin.Forms.Platform.WPF.dll",
+        "lib/net45/Xamarin.Forms.Platform.WPF.pdb",
+        "xamarin.forms.platform.wpf.3.1.0.697729.nupkg.sha512",
+        "xamarin.forms.platform.wpf.nuspec"
+      ]
+    },
+    "FableWpf/1.0.0": {
+      "type": "project",
+      "path": "../FableWpf/FableWpf.fsproj",
+      "msbuildProject": "../FableWpf/FableWpf.fsproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "FSharp.Core >= 4.5.2",
+      "FableWpf >= 1.0.0",
+      "Fabulous.Core >= 0.27.0",
+      "Fabulous.CustomControls >= 0.27.0",
+      "Fabulous.LiveUpdate >= 0.27.0",
+      "Xamarin.Forms >= 3.1.0.697729",
+      "Xamarin.Forms.Platform.WPF >= 3.1.0.697729"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Chris\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\FableWpf.WPF\\FableWpf.WPF.fsproj",
+      "projectName": "FableWpf.WPF",
+      "projectPath": "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\FableWpf.WPF\\FableWpf.WPF.fsproj",
+      "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\FableWpf.WPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\.nuget\\NuGet.Config",
+        "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "projectReferences": {
+            "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\FableWpf\\FableWpf.fsproj": {
+              "projectPath": "C:\\Users\\Chris\\Documents\\Programmation\\Presentation\\Fs\\Apps\\fabulous\\FableWpf\\FableWpf\\FableWpf.fsproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net471": {
+        "dependencies": {
+          "FSharp.Core": {
+            "target": "Package",
+            "version": "[4.5.2, )"
+          },
+          "Fabulous.Core": {
+            "target": "Package",
+            "version": "[0.27.0, )"
+          },
+          "Fabulous.CustomControls": {
+            "target": "Package",
+            "version": "[0.27.0, )"
+          },
+          "Fabulous.LiveUpdate": {
+            "target": "Package",
+            "version": "[0.27.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.1.0.697729, )"
+          },
+          "Xamarin.Forms.Platform.WPF": {
+            "target": "Package",
+            "version": "[3.1.0.697729, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}

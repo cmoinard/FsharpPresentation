@@ -506,7 +506,7 @@ public Option<IReadOnlyCollection<Employee>>
 
 ```csharp
 public static class TaskExt
-{        
+{
     public static Task<V> SelectMany<T, U, V>(
         this Task<T> v,
         Func<T, Task<U>> f, 
@@ -542,6 +542,7 @@ public Task<IReadOnlyCollection<Employee>>
 - Peut utiliser les objets de la plateforme
 - Interopérabilité C#-F#
 - Orienté objet
+- Exceptions, null …
 
 
 ---
@@ -660,6 +661,65 @@ Ex: Regex
 
 ***
 
+### Web servers
+
+- Giraffe (surcouche fonctionnelle à ASP .net core)
+- Saturn (surcouche MVC à Giraffe)
+
+---
+
+### Saturn - Routers
+
+    let topRouter = router {
+        pipe_through headerPipe
+        not_found_handler (text "404")
+
+        get "/" helloWorld
+        get "/a" helloWorld2
+        getf "/name/%s" helloWorldName
+        getf "/name/%s/%i" helloWorldNameAge
+
+        //routers can be defined inline to simulate `subRoute` combinator
+        forward "/other" (router {
+            pipe_through otherHeaderPipe
+            not_found_handler (text "Other 404")
+
+            get "/" otherHelloWorld
+            get "/a" otherHelloWorld2
+        })
+
+        // or can be defined separatly and used as HttpHandler
+        forward "/api" apiRouter
+    }
+
+---
+
+### Saturn - Controllers
+
+    let showUserV1 ctx id =
+        (sprintf "Show handler version 1 - %i" id)
+        |> Controller.text ctx
+
+    let userControllerVersion1 = controller {
+        version 1
+        subController "/comments" commentController
+
+        index (fun ctx -> "Index handler version 1" |> Controller.text ctx)
+        add (fun ctx -> "Add handler version 1" |> Controller.text ctx)
+        show showUserV1
+    }
+
+    // index        -> GET /
+    // show         -> GET /:id
+    // add          -> GET /add
+    // edit         -> GET /:id/edit
+    // create       -> POST /
+    // update       -> POST /:id ou PATCH /:id
+    // delete       -> DELETE /:id
+    // delete_all   -> DELETE /
+
+***
+
 ### Fable
 
 - F# -> Js
@@ -679,7 +739,37 @@ https://www.slideshare.net/RogerioChaves1/introduction-to-elm
 
 ---
 
-### Démo
+### Counter
+
+<img src="images/Counter.gif" style="background: transparent; border-style: none;" />
+
+---
+
+### Counter
+
+    type Model = int
+
+    type Msg =
+    | Increment
+    | Decrement
+
+    let init() : Model = 0
+
+    let update (msg:Msg) (model:Model) =
+        match msg with
+        | Increment -> model + 1
+        | Decrement -> model - 1
+
+    let view (model:Model) dispatch =
+        div []
+            [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
+              div [] [ str (string model) ]
+              button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ] ]
+
+    Program.mkSimple init update view
+    |> Program.withReact "elmish-app"
+    |> Program.run
+
 
 ---
 
@@ -689,6 +779,12 @@ https://www.slideshare.net/RogerioChaves1/introduction-to-elm
 - A: Azure
 - F: Fable
 - E: Elmish
+
+---
+
+### Model-View-Update
+
+<img src="images/MVU2.jpg" style="background: transparent; border-style: none;" />
 
 ---
 
@@ -732,6 +828,6 @@ Fable pour Xamarin Forms / WPF
 
 ***
 
-### Conclusion / Questions
+### Questions
 
 ***
